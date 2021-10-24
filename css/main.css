@@ -542,6 +542,7 @@ img {
 }
 
 .form__btns {
+  margin-top: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
