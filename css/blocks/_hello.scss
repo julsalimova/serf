@@ -1,0 +1,36 @@
+.hello {
+  background:  url(../img/bg.png) center top  no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #FFFFFF;
+}
+.hello__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0 65px 0;
+}
+
+.hello-content{
+  width: 40%;
+}
+.hello-content__title {
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 58px;
+color: #FFFFFF;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+
+.hello-content__text {
+  font-size: 21px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+
+

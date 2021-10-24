@@ -1,0 +1,32 @@
+.why__list {
+  display: flex;
+}
+
+.why__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  &:before {
+    content: url(../../img/cercl.png);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    transform: translateX(50%);
+    }
+
+  &:first-child {
+    padding: 0;
+  }
+  
+  &:last-child {
+    padding: 0;
+
+    &:before {
+      display: none;
+    }
+
+  }
+
+  
+}
