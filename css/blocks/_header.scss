@@ -13,9 +13,17 @@
 
 .logo {
   display: block;
-  margin-right: 46px;
+  margin-right: rem(46px);
   
 } 
+
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
+
+
 .menu__list  {
   display: flex;
   justify-content: space-between;
@@ -24,10 +32,10 @@
 .menu__item {
   font-style: normal;
   font-weight: bold;
-  margin-right: 22px; 
+  margin-right: rem(22px); 
 
   &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
 }
 
@@ -35,6 +43,12 @@
 .menu__item :hover {
   color: #000000 ;
   transition: 0.3s all;
+}
+
+.contacts__phone .header__contacts-phone {
+  @include tablets {
+    display: none;
+  }
 }
 
 .contacts {
@@ -45,15 +59,15 @@
 
  .contacts__phone {
   display: flex;
-  font-size: 22px;
+  font-size: rem(22px);
   align-items: center;
   font-weight: bold;
  }
 
  .contacts__img {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: rem(12px);
+  height: rem(12px);
+  margin-right: rem(6px);
  }
 
 

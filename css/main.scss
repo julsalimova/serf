@@ -7,6 +7,12 @@ $grey:  #666666;
 $black:#292929;
 $background: #F8FAF9;
 
+$tablets: 768px;
+$phones:480px;
+
+
+@import "./blocks/_media";
+
 @import url(https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swa);
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 

@@ -1,6 +1,13 @@
 html {
-  font-family: "Alegreya Sans";
-  font-size: 18px;
+  font-size: $basefontsize;
+
+  @include tablets {
+    font-size: $basefontsize - 1px;
+  }
+  @include phones {
+    font-size: $basefontsize - 2px;
+  }
+  
 }
 body,html {
   height: 100%;
@@ -8,7 +15,7 @@ body,html {
 }
 
 body {
-  
+  font-family: "Alegreya Sans";
   margin: 0;
 }
 
@@ -54,14 +61,15 @@ img {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
+  width: 100%;
 }
 
 
 .container {
   padding: 0px 0px;
   margin: 0 auto;
-  max-width: 940px;
-  width: 100%;
+  max-width: $containerWidth;
+  width: 95%;
   height: 100%;
 }
 

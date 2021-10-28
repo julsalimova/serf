@@ -1,0 +1,17 @@
+@function rem($px) {
+  @return $px / $baseFontsize + 0rem;
+}
+
+@mixin tablets {
+  @media screen and (max-widht: $tablets) {
+    @content;
+  }
+  
+}
+
+@mixin phones {
+  @media screen and (max-widht: $phones) {
+    @content;
+  }
+  
+}

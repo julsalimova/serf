@@ -6,10 +6,10 @@
 .offer__item {
   display: flex;
   justify-content: flex-start;
-  margin-right: 30px;
+  margin-right: rem(30px);
 
   &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
   
 }

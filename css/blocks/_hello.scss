@@ -9,7 +9,7 @@
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px 0 65px 0;
+  padding: rem(24px) 0 rem(65px) 0;
 }
 
 .hello-content{
@@ -18,18 +18,18 @@
 .hello-content__title {
 font-style: normal;
 font-weight: bold;
-font-size: 48px;
-line-height: 58px;
+font-size: rem(48px);
+line-height: rem(58px);
 color: #FFFFFF;
-margin-bottom: 20px;
+margin-bottom: rem(20px);
 text-transform: uppercase;
 }
 
 .hello-content__text {
-  font-size: 21px;
-  line-height: 25px;
+  font-size: rem(21px);
+  line-height: rem(25px);
   color: #FFFFFF;
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
 }
 
 

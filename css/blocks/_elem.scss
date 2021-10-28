@@ -3,14 +3,14 @@
   
 }
 .elem__img {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 
 
 .elem__img-wrappwer {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
@@ -18,8 +18,8 @@
 }
 
 .elem__icon {
-  width: 68px;
-  height: 68px;
+  width: rem(68px);
+  height: rem(68px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,9 +27,9 @@
 }
 
 .elem__title {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   font-weight: bold;
-  font-size: 27px;
+  font-size: rem(27px);
   color: $black;
 }
 
