@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 
@@ -18,6 +18,8 @@
 } 
 
 .menu {
+  margin: 0 20px;
+  padding-top: 5px;
   @include tablets {
     display: none;
   }
@@ -28,8 +30,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap
-  ;
+  flex-wrap: wrap;
+  justify-content: center;
   
 }
 
@@ -40,7 +42,8 @@
 .menu__item {
   font-style: normal;
   font-weight: bold;
-  margin-right: rem(22px); 
+  margin-right: rem(22px);
+  margin-bottom: rem(10px); 
 
   &:last-child {
     margin-right: rem(0px);
@@ -72,12 +75,13 @@
   font-weight: bold;
  }
 
- .contacts__img {
+ .contacts__icon {
+  flex-shrink: 0;
   width: rem(12px);
   height: rem(12px);
   margin-right: rem(6px);
-  flex-shrink: 0;
  }
+ 
 
 .contacts__number {
   white-space: nowrap;

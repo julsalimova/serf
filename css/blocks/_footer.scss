@@ -1,24 +1,57 @@
 
-.footer__container {
-  display: flex;
-  align-items: center;
-}
-
 .map {
   background:  url(../img/map.png) center top  no-repeat;
   background-size: cover;
   height: 100vh;
-  color: #FFFFFF;
+
 }
 
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .contacts__footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: rem(20px);
+}
+
+.contacts-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 
+.contacts__text {
+  margin-bottom: rem(5px);
+  font-style: normal;
+  font-size: rem(21px);
+}
 
+.contacts__number {
+  font-style: normal;
+  font-weight: normal;
+  font-size: rem(21px);
+}
 
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__item {
+  width: rem(30px);
+  height: rem(30px);
+}
+
+.fb-icon {
+  fill: black;
+}
 
