@@ -1,0 +1,24 @@
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.map {
+  background:  url(../img/map.png) center top  no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #FFFFFF;
+}
+
+
+.contacts__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+
+

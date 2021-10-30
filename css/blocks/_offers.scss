@@ -14,4 +14,8 @@
   
 }
 
-
+.offers {
+  @include tablets {
+    display: none;
+  }
+}

@@ -17,6 +17,11 @@
 .form {
   display: flex;
   
+  
+  @include tablets {
+    padding: 0 19%;
+    flex-direction: column;
+  }
 }
 
 .form__col {
@@ -26,6 +31,11 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include tablets {
+    margin-right: 0;
+  }
+
 }
 
 .form__row {

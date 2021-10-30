@@ -1,15 +1,4 @@
-$containerWidht: 940px;
-$basefontsize: 18px;
-
-$z-fixed-menu : 100;
-
-$grey:  #666666;
-$black:#292929;
-$background: #F8FAF9;
-
-$tablets: 768px;
-$phones:480px;
-
+@import "./blocks/_variable";
 
 @import "./blocks/_media";
 
@@ -31,3 +20,5 @@ $phones:480px;
 @import "./blocks/_form";
 @import "./blocks/_radio";
 @import "./blocks/_fixed_menu";
+@import "./blocks/_footer";
+@import "./blocks/_hamburger";
