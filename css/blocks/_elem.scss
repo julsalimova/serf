@@ -1,9 +1,20 @@
 .elem {
   text-align: center;
-  
+
+  @include phones {
+    text-align: left;
+    }
+    
 }
+
 .elem__img {
   margin-bottom: rem(20px);
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(12px);
+    }
+  
 }
 
 
@@ -15,6 +26,12 @@
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
+
+@include mini {
+  width: rem(80px);
+  height: rem(80px);
+}
+
 }
 
 .elem__icon {
@@ -25,6 +42,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   
+
+  @include mini {
+    width: rem(50px);
+    height: rem(50px);
+  }
 }
 
 .elem__title {
@@ -32,5 +54,19 @@
   font-weight: bold;
   font-size: rem(27px);
   color: $black;
+
+  @include phones {
+    margin-bottom: rem(7px);
+    }
+   @include mini {
+    font-size: rem(20px);
+    }
 }
 
+.elem__desq {
+  color: $grey;
+
+  @include mini {
+    font-size: rem(14px);
+  }
+}

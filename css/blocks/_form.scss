@@ -12,6 +12,11 @@
   margin-top: rem(62px);
   margin-bottom: rem(61px);
   
+
+  @include mini {
+    font-size: rem(30px);
+    margin-bottom: rem(10px);
+  }
 }
 
 .form {
@@ -21,6 +26,11 @@
   @include tablets {
     padding: 0 19%;
     flex-direction: column;
+  }
+
+  @include phones {
+    padding: 0 1%;
+    
   }
 }
 
@@ -61,12 +71,21 @@
   &--textarea {
     height: rem(152px);
     resize: none;
+
+    @include mini {
+      height: rem(100px);
+    }
   }
 
   &:focus {
     border-color: #FFD517;
     outline: none ;
   }
+
+  @include mini {
+    padding: rem(3px) rem(3px);
+  }
+
 }
 
 
@@ -75,10 +94,25 @@
   display: flex;
   flex-wrap: wrap;
   
+  @include phones {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .form__btns {
   margin-top: rem(44px);
   display: flex;
   justify-content: center;
+
+  @include phones {
+    margin-top: rem(10px);
+  }
+
+}
+
+.form__title {
+  @include mini {
+    font-size: rem(14px);
+  }
 }

@@ -1,5 +1,9 @@
 .why__list {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .why__item {
@@ -32,5 +36,10 @@
 
   }
 
+  @include phones {
+    padding: 0;
+    margin: rem(10px);
+    display: flex;
+    }
   
 }

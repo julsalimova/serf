@@ -71,6 +71,10 @@ img {
   max-width: $containerwidht;
   width: 95%;
   height: 100%;
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 

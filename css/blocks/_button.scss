@@ -29,5 +29,13 @@
     }
 
   }
+
+  @include mini {
+    border-radius: rem(100px);
+    padding: rem(10px) rem(10px);
+    font-style: bold;
+    font-size: rem(14px);
+    width: rem(100px);
+  }
 }
 

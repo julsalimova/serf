@@ -3,13 +3,28 @@
   background-size: cover;
   height: 100vh;
   color: #FFFFFF;
+
+  @include tablets {
+    background-position: 80% 50px;
+  }
+
+  @include phones {
+    background: url(../img/bgphones.jpg) center top  no-repeat;
+  }
+
 }
+
+
 .hello__container {
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  padding: rem(24px) 0 rem(65px) 0;
+
+  @include tablets {
+    width: 100%;
+  }
+
 }
 
 .hello-content{
@@ -25,8 +40,9 @@
   text-align: center;
 }
 
-
 }
+
+
 .hello-content__title {
 font-style: normal;
 font-weight: bold;
@@ -35,6 +51,16 @@ line-height: rem(58px);
 color: #FFFFFF;
 margin-bottom: rem(20px);
 text-transform: uppercase;
+
+@include phones {
+  font-size: rem(40px);
+  padding: 1%;
+  flex-wrap: wrap;
+  line-height: 36px;
+}
+@include mini {
+  font-size: rem(30px);
+}
 }
 
 .hello-content__text {
@@ -42,6 +68,14 @@ text-transform: uppercase;
   line-height: rem(25px);
   color: #FFFFFF;
   margin-bottom: rem(40px);
+
+  @include phones {
+    font-size: rem(18px);
+  }
+
+  @include mini {
+    font-size: rem(14px);
+  }
 }
 
 

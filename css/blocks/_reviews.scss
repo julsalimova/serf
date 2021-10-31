@@ -3,6 +3,10 @@
   padding: rem(50px) rem(35px) rem(44px);
   margin-bottom: rem(15px);
   color: $black;
+
+  @include mini {
+    padding: rem(5px) rem(5px) rem(5px);
+  }
 }
 
 .reviews__display-content {
@@ -34,18 +38,27 @@
 .reviews__text {
   flex: 1;
   padding: rem(38px) rem(70px);
+
+  @include tablets {
+    padding: 5%;
+  }
 }
 
 .reviews__title {
   font-weight: bold;
   font-size: rem(27px);
   margin-bottom: rem(14px);
+
   
 }
 
 .reviews__desq {
   margin-bottom: rem(25px);
   color: $grey;
+
+  @include mini {
+    font-size: rem(14px);
+    }
 }
 
 .reviews__list {
