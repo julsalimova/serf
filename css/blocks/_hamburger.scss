@@ -1,13 +1,16 @@
 .hamburger {
   width: 24px;
   height: 20px;
-  display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
   display: none;
+  cursor: pointer;
 
   @include tablets {
     display: inline-flex;
+    transition: opacity 0.25s;
+
+  
   }
 }
 

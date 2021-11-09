@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body class="body_active_menu">
   <div class="wrapper wrapper--main">
     <div class="wrapper__content">
       <section class="hello">
@@ -43,7 +43,7 @@
                 </a>
               </address>
             </div>
-            <a href="" class="hamburger">
+            <a href="" class="hamburger" id="toggle">
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
@@ -141,6 +141,107 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section class="section product-section">
+        <div class="container section-container">
+            <a href="" class="product-slider__arrow product-slider__arrow--direction-prev">
+              <img src="./img/left.png" alt="" class="left">
+            </a>
+            <div class="product-slider">
+              <ul class="products">
+                <li class="product__item">
+                  <div class="product__slider">
+                    <div class="product__img">
+                      <img src="./img/board1.png" alt="" class="product__pic">
+                    </div>
+                    <div class="product__options">
+                      <div class="options">
+                          <div class="options__img-wrappwer">
+                            <svg class="options__icon">
+                              <use xlink:href="./img/sprite.svg#options"></use>
+                            </svg>
+                            <a href="" class="options__link">Параметры</a>
+                          </div>
+                        <div class="options__dropdown">
+                          <ul class="options__list">
+                            <li class="option__item">
+                              <span class="option__icon">
+                                <svg class="img__icon">
+                                  <use xlink:href="./img/sprite.svg#lenght"></use>
+                                </svg>
+                              </span>
+                              <span class="option__text">Длина доски </span>
+                              <span class="option__size">от 2,5 м </span> 
+                            </li>
+                            <li class="option__item">
+                              <span class="option__icon">
+                                <svg class="img__icon">
+                                  <use xlink:href="./img/sprite.svg#widht"></use>
+                                </svg>
+                              </span>
+                              <span class="option__text">Ширина доски </span>
+                              <span class="option__size">от 40 см </span> 
+                            </li>
+                            <li class="option__item">
+                              <span class="option__icon">
+                                <svg class="img__icon">
+                                  <use xlink:href="./img/sprite.svg#thick"></use>
+                                </svg>
+                              </span>
+                              <span class="option__text">Толщина</span>
+                              <span class="option__size">8 см </span> 
+                            </li>
+                            <li class="option__item">
+                              <span class="option__icon">
+                                <svg class="img__icon">
+                                  <use xlink:href="./img/sprite.svg#time"></use>
+                                </svg>
+                              </span>
+                              <span class="option__text">Срок службы</span>
+                              <span class="option__size">5 лет</span> 
+                            </li>
+                            <li class="option__item">
+                              <span class="option__icon">
+                                <svg class="img__icon">
+                                  <use xlink:href="./img/sprite.svg#weight"></use>
+                                </svg>
+                              </span>
+                              <span class="option__text">Вес</span>
+                              <span class="option__size">7-8 кг</span> 
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__text">
+                        <h2 class="product__title">Лонгборд 2.0</h2>
+                        <div class="product__desq">
+                        <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                        </p>
+                        </div>
+                      </div>
+                      <ul class="product-size__list">
+                        <li class="product-size__elem">
+                          <h4 class="product-size__title">Длина доски</h4>
+                          <div class="product-size__desq"><p>от 2,5 метров</p></div>
+                          <h2 class="product__cost-title"> 7000 ₽</h2>
+                        </li>
+                        <li class="product-size__elem">
+                          <h4 class="product-size__title">Ширина доски</h4>
+                          <div class="product-size__desq">
+                            <p>от 40 сантиметров</p>
+                          </div>
+                          <a href="#" class="button">Заказать</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          <a href="" class="product-slider__arrow product-slider__arrow--direction-next">
+            <img src="./img/right.png" alt="" class="right">
+           </a>
         </div>
       </section>
       <section class="section reviews-section">
@@ -254,7 +355,6 @@
               </div>
       </section>
       <section class="map">
-
       </section>
       <footer class="footer">
         <div class="footer">
@@ -344,7 +444,25 @@
         </li>
       </ul>
   </nav>
+<div class="fullscreen-menu open" id="active">
+  <a href="" class="fullscreen-menu__close" id="close"> 
+    <svg class="close__icon">
+      <use xlink:href="./img/sprite.svg#close"></use>
+    </svg>
+  </a>
+  <nav class="menu__vertical">
+    <ul class="menu__list-vertical">
+      <li class="menu__item-vertical"><a href="#" class="menu__link"> О нас</a></li>
+      <li class="menu__item-vertical"><a href="#" class="menu__link">Серфобрды</a></li>
+      <li class="menu__item-vertical"><a href="#" class="menu__link">Команда</a></li>
+      <li class="menu__item-vertical"><a href="#" class="menu__link">Меню</a></li>
+      <li class="menu__item-vertical"><a href="#" class="menu__link">Отзывы</a></li>
+      <li class="menu__item-vertical"><a href="#" class="menu__link">Как мы работаем</a></li>
+      <li class="menu__item-vertical"><a href="#" class="menu__link">Контакты</a></li>
+    </ul>
+  </nav>
+</div>
 </body>
-
+<script src="./main.js"></script>
 </html>
 
