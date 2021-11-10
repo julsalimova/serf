@@ -1,6 +1,5 @@
 
 .fullscreen-menu {
-  
   display: flex;
   position: fixed;
   top: 0;
@@ -20,7 +19,6 @@
 
 .fullscreen-menu.open {
   
-
   @include tablets {
     opacity: 0.99;
     visibility: visible;
@@ -31,7 +29,6 @@
 .menu__list-vertical {
   display: flex;
   flex-direction: column;
-  font-size: rem(16px);
   text-align: center;
   
 }
@@ -41,7 +38,18 @@
   font-size: rem(36px);
   font-weight: normal;
   color: #fff;
+
+  @include phone {
+    margin-bottom: rem(50px);
+  }
+
+  @include mini{
+    margin-bottom: rem(30px);
+    font-size: rem(15px);
+  }
+
 }
+
 
 .fullscreen-menu__close {
   display: block;
