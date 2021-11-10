@@ -4,10 +4,11 @@
 
 .products {
   padding: 5% 5%;
+  
 }
 
 
-.product__slider {
+.product__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,8 +31,7 @@
 }
 
 .product__img {
- min-width: 50%; 
-
+flex-shrink: 0;
 }
 
 
@@ -115,10 +115,11 @@
 
   
 .product-slider__arrow--direction-next {
-  right: 0;
+  right: -2%;
   display: block;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
 
   @include tablets {
     top: 40%;
@@ -126,10 +127,11 @@
  
 }
 .product-slider__arrow--direction-prev {
-  left: 0;
+  left: -2%;
   display: block;
   position: absolute;
-  
+  top: 50%;
+  transform: translateY(-50%);
   @include tablets {
     top: 40%;
   }

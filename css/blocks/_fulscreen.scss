@@ -39,17 +39,14 @@
   font-weight: normal;
   color: #fff;
 
-  @include phone {
-    margin-bottom: rem(50px);
+  @include phones {
+    margin-bottom: 15%;
   }
 
-  @include mini{
-    margin-bottom: rem(30px);
-    font-size: rem(15px);
+  @include mini {
+    font-size: rem(30px);
   }
-
 }
-
 
 .fullscreen-menu__close {
   display: block;
@@ -69,5 +66,8 @@
 }
 
 .body_active_menu {
-  overflow: hidden;
+  @include tablets {
+    overflow: hidden;
+  }
+  
 }
