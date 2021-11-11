@@ -1,4 +1,4 @@
-/* let menuOpenBurger = (function (options) {
+let menuOpenBurger = (function (options) {
   let href = document.querySelector(options.href);
   let menu = document.querySelector(options.menu);
   let close = document.querySelector('#close');
@@ -24,12 +24,12 @@ let addListeners = function (){
 
   menuOpenBurger.openMenu();
 
-  console.log(menuOpenBurger)*/
+  console.log(menuOpenBurger)
 
 
 
 
-  let href = document.querySelector('#toggle');
+ /*  let href = document.querySelector('#toggle');
 let menu = document.querySelector('#active');
 let close = document.querySelector('#close');
 let body = document.querySelector('body');
@@ -41,4 +41,4 @@ body.classList.toggle('body_active_menu');
 }
 
 href.addEventListener('click', _toggleMenu);
-close.addEventListener('click', _toggleMenu);
+close.addEventListener('click', _toggleMenu);*/
