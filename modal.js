@@ -48,7 +48,7 @@ const isValid = valedateFields(form[name,phone,comment,to]);
   });
 
   request.fail(data => {
-    const message = data.responeJASON.message;
+    const message = data.responseJSON.message;
     content.text(message);
     modal.addClass("error-modal");
   });
