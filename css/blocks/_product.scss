@@ -1,19 +1,58 @@
-
-.container-product {
+.container.container-product {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+  height: auto;
+  padding: 2% ;
+
+  @include phones {
+    padding: 7% ;
+  }
 }
 
+.product__arrow {
+  background: url(../img/right.svg) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: block;
+  width: rem(24px);
+  height:rem(40px) ;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  fill: #000000;
+  stroke:#000000 ;
+
+  &-prev {
+    left: -2%;
+    transform: rotate(-180deg);
+    @include phones {
+      left: 0;
+    }
+  }
+
+  &-next{
+    right: -2%;
+    @include phones {
+      right: 0;
+    }
+  }
+}
+
+.product-slider {
+  display: flex;
+
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
 
 .product__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  overflow: hidden;
-
+  box-sizing: border-box;
+  
   @include tablets {
     flex-direction: column;
   }
@@ -21,13 +60,20 @@
 
 .product__options {
   flex: 1;
+
   @include tablets {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
   }
  
+}
+
+.options {
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .product__img {
@@ -35,11 +81,17 @@ flex-shrink: 0;
 flex: 1;
 }
 
+.product__pic {
+  @include phones {
+    max-height: rem(330px);
+  }
+}
+
 
 .product__text {
   display: flex;
   flex-direction: column;
-  min-width: rem(374px);
+  
  
   @include tablets {
     align-items: center;
@@ -60,6 +112,15 @@ flex: 1;
     font-size: rem(30px);
   }
 }
+
+.product__desq {
+  @include mini {
+    display: flex;
+    font-size: rem(14px);
+    flex-wrap: wrap;
+  }
+} 
+
 
 .product-size__list {
   margin-top: rem(24px);
@@ -83,8 +144,11 @@ flex: 1;
     text-align: start;
     align-items: center;
     }
-}
 
+    @include phones {
+      max-width: 100%;
+    }
+}
 
 
 .product-size__desq {
@@ -113,32 +177,4 @@ flex: 1;
   }
 }
 
-
   
-.product-slider__arrow--direction-next {
-  right:rem(-26px);
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
-  @include tablets {
-    top: 30%;
-    transform: translateY(-30%);
-    right: 10%;
-  }
- 
-}
-.product-slider__arrow--direction-prev {
-  left: rem(-26px);
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
-  @include tablets {
-    top: 30%;
-    transform: translateY(-30%);
-    left: 10%;
-  }
-}

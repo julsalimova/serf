@@ -3,6 +3,11 @@
   position: relative;
   display: inline-block;
   margin-bottom: rem(64px);
+  
+  @include tablets {
+    display: none;
+  }
+
 }
 
 .options__img-wrappwer {
@@ -14,9 +19,7 @@
   overflow: hidden;
   
   
-  @include tablets {
-    display: none;
-  }
+  
 }
 
 .options__icon {
