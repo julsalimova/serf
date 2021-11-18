@@ -1784,3 +1784,110 @@ img {
 .form__input.input-error {
   border-color: red;
 }
+
+.menu-section {
+  background: url(../img/Slider.png) center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.menu__title {
+  font-weight: bold;
+  font-size: 2.6666666667rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 6.0555555556rem;
+  position: absolute;
+  margin-left: 4.6666666667rem;
+}
+
+.menu-acco {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-acco__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.menu-acco__link {
+  background: url(../img/Slide.png) no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center center;
+  text-decoration: none;
+  width: 5.6666666667rem;
+}
+
+.menu-acco__link.short {
+  background: url(../img/Slide-2.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-acco__link.soft {
+  background: url(../img/Slide-3.png) no-repeat;
+  background-size: cover;
+}
+
+.menu-acco__link-text {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 2.6666666667rem;
+  color: #fff;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-top: 2.2222222222rem;
+}
+
+.menu-acco__content {
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  background: #333537;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #FFFFFF;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.menu-acco__text {
+  width: 100%;
+  font-size: 0.8888888889rem;
+  font-weight: 300;
+  position: relative;
+  padding: 2.1111111111rem;
+  color: #FFFFFF;
+}
+
+.menu-acco__item.active {
+  width: 29.1111111111rem;
+}
