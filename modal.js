@@ -8,7 +8,7 @@ const valedateFields = (form,fiealdsArray) => {
   });
 
   const errorFields = form.find(".input-error");
-  return errorFields.lenght == 0;
+  return errorFields.length == 0;
 };
 
 
@@ -27,7 +27,8 @@ const content = modal.find(".modal__content");
 
 modal.removeClass("error-modal")
 
-const isValid = valedateFields(form[name,phone,comment,to]);
+const isValid = valedateFields(form, [name,phone,comment,to]);
+
 
 
  if (isValid){

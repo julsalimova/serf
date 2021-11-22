@@ -454,6 +454,9 @@
             <span class="menu-acco__link-text">Лонгборды</span>
             </a>
           <div class="menu-acco__content">
+            <button class="menu-acco-close" type="button">
+              <img src="./img/close.svg" alt="" srcset="" class="close__btn"> 
+            </button>
             <p class="menu-acco__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
             </p>
           </div>
@@ -463,6 +466,9 @@
             <span class="menu-acco__link-text" >Шортборды</span>
           </a>
           <div class="menu-acco__content">
+            <button class="menu-acco-close" type="button">
+              <img src="./img/close.svg" alt="" srcset="" class="close__btn"> 
+            </button>
             <p class="menu-acco__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
             </p>
           </div>
@@ -472,6 +478,9 @@
             <span class="menu-acco__link-text">Софттопы</span>
           </a>
           <div class="menu-acco__content">
+            <button class="menu-acco-close" type="button">
+              <img src="./img/close.svg" alt="" srcset="" class="close__btn"> 
+            </button>
             <p class="menu-acco__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
             </p>
           </div>
@@ -549,6 +558,29 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section class="section player">
+        <div class="container">
+          <h2 class="section__title ">как мы работаем</h2>
+        <div class="player">
+          <div class="player__wrapper">
+            <video  id="player" poster="./img/poster.png">
+            <source src="./video.mp4" type="video/mp4">
+            </video>
+            <img src="./img/play.svg" alt="" class="play video-play">
+          </div>
+          <div class="player__controls">
+            <div class="player__duration">
+                <img src="./img/play.png" alt="" class="play play__start-img">
+              <input type="range" class="duration__length" id="durationlevel">
+            </div>
+            <div class="player__sound">
+              <img src="./img/sound.png" alt="" class="play play__sound-img">
+              <input type="range" class="duration__length sound" id="miclevel"  >
+            </div>
+          </div>
+        </div>
         </div>
       </section>
       <section class="section order-section">
@@ -633,7 +665,8 @@
           </div>
         </div>
       </div>
-      <section class="map">
+      <section class="section map-section">
+        <div id="map" class="map"></div>
       </section>
       <footer class="footer">
         <div class="footer">
@@ -745,6 +778,10 @@
 <script src="./jQueryv3.6.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=5bbbbd25-e8a7-4586-8b6b-6252b3e3b340&lang=ru_RU" type="text/javascript">
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+
 <script src="./main.js"></script>
 
 <script src="./reviews.js" defer></script>
@@ -752,5 +789,6 @@
 <script src="./slider.js" defer></script>
 <script src="./modal.js" defer></script>
 <script src="./menu-acco.js" defer></script>
-
+<script src="./map.js" defer></script>
+<script src="./player.js"></script>
 </html>
