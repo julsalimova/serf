@@ -69,8 +69,17 @@ img {
 
 .wrapper {
   overflow: hidden;
-  min-height: 100%;
+  height: 100%;
   width: 100%;
+}
+
+.wrapper__content {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -967,6 +976,9 @@ img {
   .fixed-menu {
     display: none;
   }
+}
+.fixed-menu--shadowed .fixed-menu__link:before {
+  background: #000;
 }
 
 .fixed-menu__item {

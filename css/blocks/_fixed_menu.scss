@@ -11,7 +11,17 @@
   @include phones {
     display: none;
   }
+
+  &--shadowed {
+    .fixed-menu__link {
+
+      &:before {
+        background: #000;
+      }
+    }
+   }
 }
+
 
 .fixed-menu__item {
   margin-bottom: rem(5px);
@@ -44,3 +54,4 @@
     transform: translate(-50%, -50%);
   }
 }
+
