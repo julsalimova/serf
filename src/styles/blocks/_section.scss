@@ -1,0 +1,25 @@
+.section {
+  height: 100vh;
+  color: $grey;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.section__title {
+  text-transform: uppercase;
+  color: $black;
+  font-weight: bold;
+  font-size: rem(48px);
+  margin-bottom: rem(50px);
+  text-align: center;
+
+  @include mini {
+    font-size: rem(30px);
+  } 
+}
+

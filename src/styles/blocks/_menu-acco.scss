@@ -1,0 +1,141 @@
+.menu-section {
+  background:  url(../img/Slider.png) center top  no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.menu__title {
+    font-weight: bold;
+    font-size: rem(48px);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: rem(109px);
+    position: absolute;
+    margin-left: rem(84px);
+   
+    @include mini {
+      margin-top: rem(40px);
+      margin-left: rem(40px);
+      font-size: rem(30px);
+    }
+}
+
+.menu-acco {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-acco__item {
+  display: flex;
+  justify-content: flex-start;
+
+  &.active {
+    background-color: rgba(51, 53, 55, 0.9);
+
+    .menu-acco__link-text {
+      color: #FEDB3F;
+    }
+
+    @include phones {
+      flex-shrink: 0;
+      order: 1;
+      width: 100%;
+      transition: color 0.4s 0.3s;
+    } 
+   
+  }
+}
+
+
+.menu-acco__link {
+  background:  url(../img/Slide.png)   no-repeat;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  background-position: center center;
+  text-decoration: none;
+  width: rem(102px);
+
+  @include phones {
+    width: rem(70px);
+  }
+  
+}
+
+.menu-acco__link.short {
+  background:  url(../img/Slide-2.png)   no-repeat;
+  background-size: cover;
+  background-position:center center ;
+  justify-content: center;
+  
+}
+
+.menu-acco__link.soft{
+  background:  url(../img/Slide-3.png)   no-repeat;
+  background-size: cover;
+ 
+}
+
+.menu-acco__link-text {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: rem(48px);
+  color: #fff;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  padding-top: rem(40px);
+  
+  @include mini {
+    font-size: rem(30px);
+  }
+ 
+}
+
+
+.menu-acco__content {
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  background: #333537;
+  transition: 0.4s;
+  color: #FFFFFF;
+  transition: width 0.3s;
+  position: relative;
+
+  @include phones {
+    transition: none;
+  }
+}
+
+.menu-acco__text{
+  width: 100%;
+  font-size: rem(16px);
+  font-weight: 300;
+  padding: rem(50px) ;
+  color: #FFFFFF;
+}
+
+.menu-acco-close {
+  display: block;
+  width: rem(24px);
+  height: rem(24px);
+  top: 2%;
+  right: 4%;
+  opacity: 0.7;
+  position: absolute;
+  background: transparent;
+}
+
+.close__btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #FFFFFF;
+}
