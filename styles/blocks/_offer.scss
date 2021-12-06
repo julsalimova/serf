@@ -1,0 +1,21 @@
+
+.offer__item {
+  display: flex;
+  align-items: center;
+}
+
+.offer__icon-pic {
+  fill:   #FFFFFF;
+  width: rem(45px);
+  height: rem(45px);
+  margin-right: rem(7px);
+}
+
+.offer__item-text {
+  font-size: rem(16px);
+  max-width: rem(85px);
+  font-weight: bold;
+}
+
+
+

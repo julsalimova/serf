@@ -1,0 +1,82 @@
+.hello {
+  background:  url(../img/bg.png) center top  no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #FFFFFF;
+
+  @include tablets {
+    background-position: 80% 50px;
+  }
+
+  @include phones {
+    background: url(../img/bgphones.jpg) center top  no-repeat;
+  }
+
+}
+
+
+.hello__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablets {
+    width: 100%;
+  }
+
+}
+
+.hello-content{
+  width: 40%;
+
+@include tablets {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+}
+
+
+.hello-content__title {
+font-style: normal;
+font-weight: bold;
+font-size: rem(48px);
+line-height: rem(58px);
+color: #FFFFFF;
+margin-bottom: rem(20px);
+text-transform: uppercase;
+
+@include phones {
+  font-size: rem(40px);
+  padding: 1%;
+  flex-wrap: wrap;
+  line-height: 36px;
+}
+@include mini {
+  font-size: rem(30px);
+}
+}
+
+.hello-content__text {
+  font-size: rem(21px);
+  line-height: rem(25px);
+  color: #FFFFFF;
+  margin-bottom: rem(40px);
+
+  @include phones {
+    font-size: rem(18px);
+  }
+
+  @include mini {
+    font-size: rem(14px);
+  }
+}
+
+
+

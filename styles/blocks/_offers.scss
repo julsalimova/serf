@@ -1,0 +1,22 @@
+.offers__list {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: rem(65px);
+}
+
+.offer__item {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: rem(30px);
+
+  &:last-child {
+    margin-right: rem(0px);
+  }
+  
+}
+
+.offers {
+  @include tablets {
+    display: none;
+  }
+}

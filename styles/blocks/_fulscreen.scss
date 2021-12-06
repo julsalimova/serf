@@ -1,0 +1,72 @@
+
+.fullscreen-menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  flex-direction: column;
+  background-color: #333537;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition: opacity 0.3s;
+
+}
+
+
+.fullscreen-menu.open {
+  
+  @include tablets {
+    opacity: 0.99;
+    visibility: visible;
+    height: 100%;
+  }
+}
+
+.menu__list-vertical {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.menu__item-vertical {
+  margin-bottom: rem(60px);
+  font-size: rem(36px);
+  font-weight: normal;
+  color: #fff;
+
+  @include phones {
+    margin-bottom: 15%;
+  }
+
+  @include mini {
+    font-size: rem(30px);
+  }
+}
+
+.fullscreen-menu__close {
+  display: block;
+  width: rem(20px);
+  height: rem(20px);
+  top: 2%;
+  right: 2%;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.close__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #FFFFFF;
+}
+
+.body_active_menu {
+  @include tablets {
+    overflow: hidden;
+  }
+}

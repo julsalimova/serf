@@ -1,0 +1,72 @@
+.elem {
+  text-align: center;
+
+  @include phones {
+    text-align: left;
+    }
+    
+}
+
+.elem__img {
+  margin-bottom: rem(20px);
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(12px);
+    }
+  
+}
+
+
+.elem__img-wrappwer {
+  display: inline-block;
+  width: rem(128px);
+  height: rem(128px);
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+
+@include mini {
+  width: rem(80px);
+  height: rem(80px);
+}
+
+}
+
+.elem__icon {
+  width: rem(68px);
+  height: rem(68px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+
+  @include mini {
+    width: rem(50px);
+    height: rem(50px);
+  }
+}
+
+.elem__title {
+  margin-bottom: rem(20px);
+  font-weight: bold;
+  font-size: rem(27px);
+  color: $black;
+
+  @include phones {
+    margin-bottom: rem(7px);
+    }
+   @include mini {
+    font-size: rem(20px);
+    }
+}
+
+.elem__desq {
+  color: $grey;
+
+  @include mini {
+    font-size: rem(14px);
+  }
+}

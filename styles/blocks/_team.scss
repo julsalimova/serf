@@ -1,0 +1,125 @@
+.team.team__list-desktop {
+  display: flex;
+  justify-content: space-between;
+
+  @include phones {
+    display: none;
+  }
+}
+
+.team__item{
+  flex: 1;
+  text-align: center;
+  margin-right: rem(20px);
+  max-width: rem(222px);
+  position: relative;
+
+  @include phones {
+    margin-right: 0;
+    flex-direction: column;
+    
+  }
+}
+
+.team__title {
+  display: inline-flex;
+  color: $grey;
+  align-items: center;
+  background: transparent;
+  color: #292929;
+  font-weight: bold;
+  font-size: rem(21px);
+  margin-top: rem(20px);
+  position: relative;
+
+  @include phones {
+    margin-bottom: rem(13px); 
+  }
+
+  
+}
+
+.team__title.active {
+  color: #FEDB3F;
+}
+
+
+.team__title::after {
+  content: "";
+  position: absolute;
+  background: url(../img/Polygon.svg)center center no-repeat;
+  width: rem(9px);
+  height: rem(9px);
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  margin-right: rem(-10px);
+  
+}
+
+.team__title.active::after {
+  transform: rotate(180deg);
+}
+
+
+
+.button {
+  cursor: pointer;
+}
+
+.team__content {
+  top: 100%;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s;
+}
+
+
+.team__avatar {
+  display: block;
+
+  @include phones {
+    width: rem(138px);
+    height: rem(180px); 
+    margin: auto;
+  }
+
+}
+.team__img {
+  display: block;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.team__profession {
+  margin-top: rem(8px);
+  margin-bottom: rem(4px); 
+
+  @include phones {
+    margin-bottom: rem(17px); 
+  }
+}
+
+.team__desq {
+  color: #666666;
+  font-weight: lighter;
+}
+
+
+.team__profession {
+color: #292929;
+margin-bottom: rem(4px);
+}
+
+
+.team.team__list-mobile {
+  display: none;
+  
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}

@@ -1,0 +1,41 @@
+.button {
+  background: #FEDB3F;
+  border-radius: rem(100px);
+  padding: rem(21px) rem(41px);
+  font-weight: bold;
+  font-size: rem(16px);
+  line-height: 1;
+  text-transform: uppercase;
+  width: rem(156px);
+  color: #000000;
+  display: block;
+  border: rem(1px) solid transparent;
+  
+  &:hover {
+    background: #000000;
+    color: #FEDB3F;
+    border: rem(1px) solid transparent;
+  }
+
+  &--transperent {
+    background: transparent;
+    color:  #FFFFFF;
+    text-transform: none;
+    font-size: rem(18px);
+
+    &:hover {
+      color: $black;
+      background: transparent;
+    }
+
+  }
+
+  @include mini {
+    border-radius: rem(100px);
+    padding: rem(10px) rem(10px);
+    font-style: bold;
+    font-size: rem(14px);
+    width: rem(100px);
+  }
+}
+
